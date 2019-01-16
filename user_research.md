@@ -35,7 +35,7 @@ Alex is a keen first year AS who has no prior training with programming tools, t
 ### The Working User:
 Brian is a second year AS who has working experience with R and with GitHub through his postings, though has not attended formal training on code QA before. He has ways of working that he has developed for himself through trial and error (i.e. his own "coding style"), which in some areas is not best practice. He is attending the masterclass to learn from the experts.
 * Brian may be resistant to being told that his "coding style" is incorrect, and require convincing.
-* He knows "what" tools are available, but does not yet understand "why" they are needed or "how" to use them most effectively.
+* He knows "what" tools are available, but does not yet fully understand "why" they are needed or "how" to use them most effectively.
 * Brian is the main target of the masterclass.
 
 ### The Expert:
@@ -44,3 +44,5 @@ Charlie is a third year AS who did Computer Science at University, and has subst
 * She may try to push discussions beyond the technical level of the other attendees (e.g. bringing up object-oriented programming or obscure PEP8 conventions).
 * If handled correctly, she can help Alex and Brian with their learning.
 * She may offer to teach a future masterclass.
+
+## Aims
