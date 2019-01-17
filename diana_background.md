@@ -26,7 +26,7 @@ Mathematically, trigraphs are calculated by representing the letters A-Z as numb
 
 The total number of trigraphs is relatively small. A telegraph operator sending thousands of letters a day would quickly memorise them and be able to encrypt and decrypt on the fly, but until then they would use a [paper aid](https://programmingpraxis.files.wordpress.com/2014/12/3ffa5-trigraph.jpg?w=511&zoom=2), which was itself optimised for quick lookups (note how the eye first travels down the side to reach the first letter and then across to reach the second, wherein the third letter is provided in handy red font).
 
-**You should now be able to look at R script 1, 1_trigraph_counting.R, and answer the questions within. Beware: The code contains problems, and it's up to you and your testing skills to solve them! The questions will give you a hint about where the problems are.**
+**You should now be able to look at the first R script, 1_trigraph_counting.R, and answer the questions within. Beware: The code contains problems, and it's up to you and your testing skills to solve them! The questions will give you a hint about where the problems are.**
 
 ## 2 - Codeword keys
 
