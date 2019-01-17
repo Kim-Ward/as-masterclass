@@ -59,4 +59,4 @@ Once you're happy that your code works (or have given up hope of it ever doing s
 As a final exercise, think about how the code you have debugged during this masterclass was written:
 * What made your job harder, and what made it easier?
 * Was there anything you would have done differently if you had been told to write the code from scratch?
-* R has many quirks that make coding in it both satisfying and exasperating, and what's best practice in one language might not be in another. If you had to rewrite this in Python, what changes would you make as a result of the linguistic switch?
+* R has many quirks that make coding in it both satisfying and exasperating, and what's best practice in one language might not be in another. If you had to rewrite this in Python, what design changes would you make as a result of the linguistic switch?
