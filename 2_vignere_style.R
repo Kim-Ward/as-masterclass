@@ -9,7 +9,7 @@ trigraph_finder <- function(A, B){
   C <- letters[C]
   return(C)
 }
-#' 3) Look at the manual trigraph key. Are the trigraphs generated above correct?
+#' 2.1) Look at the manual trigraph key. Are the trigraphs generated above correct?
 
 repeat_key <- function(key, length_to_repeat){
   #Repeats a key to the desired length.
@@ -21,7 +21,7 @@ repeat_key <- function(key, length_to_repeat){
   repeated_key <- paste(repeated_key, substr(key, 1, length_to_repeat))
   return(repeated_key)
 }
-#' 4) Is the key repeating correctly?
+#' 2.2) Is the key repeating correctly?
 #' Clue: there are *two* separate errors in the above code.
 
 crypto <- function(message, key){
@@ -36,7 +36,7 @@ crypto <- function(message, key){
   }
   return(output)
 }
-#' 5) Do messages encrypt without error?
-#' 6) If you encrypt and decrypt with the same key,
+#' 2.3) Do messages encrypt without error?
+#' 2.4) If you encrypt and decrypt with the same key,
 #' do you get back the original message?
 #' 
