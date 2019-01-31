@@ -20,7 +20,7 @@ count_trigraphs <- function(){
   return(trigraphs)
 }
 
-#' 1) How many trigraphs are there in this cryptosystem?
+#' 1.1) How many trigraphs are there in this cryptosystem?
 #' Does this match your mathematical intuition?
-#' 2) Does the number of trigraphs change if we choose a 
+#' 1.2) Does the number of trigraphs change if we choose a 
 #' different number than -1 mod 26?
