@@ -10,7 +10,7 @@ generate_one_time_pad <- function(seed){
   }
   return(one_time_pad)
 }
-#' 7 - ADVANCED) Why does this code run so slowly? Can you speed it up at all?
+#' 3.1 - ADVANCED) Why does this code run so slowly? Can you speed it up at all?
 #' Feel free to skip this exercise if you can't figure out the answer:
 #' after all, code that runs slowly *does* run.
 #' (That's what many people do in real life!)
@@ -26,7 +26,7 @@ load_one_time_pad <- function(filename){
   return(one_time_pad)
 }
 
-#' 8) Does saving then loading the same one-time pad match?
+#' 3.2) Does saving then loading the same one-time pad match?
 #' 
 tear_off_page <- function(one_time_pad){
   #Destroys the first "page" (1000 letters) of the one-time pad.
@@ -36,6 +36,6 @@ tear_off_page <- function(one_time_pad){
 }
 
 
-#' Does tearing off a page work correctly?
+#' 3.3) Does tearing off a page work correctly?
 #' Clue: there are *two* errors in the above code. The print statement should
 #' immediately make one of them obvious.
