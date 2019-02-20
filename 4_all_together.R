@@ -1,8 +1,8 @@
 #' Brings previous work together.
 #' There are no intentional errors in this script!
 
-source('diana.R')
-source('one_time_pads.R')
+source('2_vignere_style.R')
+source('3_one_time_pads.R')
 
 random_timestamp <- as.numeric(Sys.time())
 
