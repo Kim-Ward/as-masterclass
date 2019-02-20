@@ -9,7 +9,7 @@
 ## 2 - Vignere Style:
 
 2.1)
-* The trigraphs are incorrect because the Diana cryptosystem uses 0-25 instead of 1-26 for its A-Z letter to number conversions. This can be fixed by (for example) editing "letter2num" to remove the +1, and by replacing 25 by 24 in the calculation inside "trigraph_finder".
+* The trigraphs are incorrect because the Diana cryptosystem uses 0-25 instead of 1-26 for its A-Z letter to number conversions. This can be fixed by (for example) editing "letter2num" to remove the +1, and by replacing 25 by 26 (or 0) in the calculation inside "trigraph_finder".
 
 2.2)
 * The "paste()" function R uses to concatenate strings adds spaces by default; use `sep=""` as an argument to the paste function to fix this.
@@ -34,7 +34,7 @@
 ### Example 1:
 * The use of R's `string` object when working with ciphertext keys and messages, while "obviously" the correct choice at first, turned out to cause lots of problems (things didn't work "as they should", since R assumes strings represent words or phrases).
 * If the code was rewritten it might be better to use a character vector containing individual letters as the central way to store ciphertext information.
-* But then again, this might cause its own problems such as increading the work needed for manual input of messages.
+* But then again, this might cause its own problems such as increasing the work needed for manual input of messages.
 * If written in Python, strings could handle everything neatly except the computationally inefficient one-time-pad generation.
 
 ### Example 2:
