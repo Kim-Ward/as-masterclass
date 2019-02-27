@@ -1,7 +1,7 @@
 
 is_trigraph <- function(A, B, C){
   #Tests if the triple (A, B, C) is a trigraph in the Diana cryptosystem.
-  return(A + B + C %% 26 == -1)
+  return(A + B + C %% 26 == 25)
 }
 
 count_trigraphs <- function(){
@@ -20,7 +20,4 @@ count_trigraphs <- function(){
   return(trigraphs)
 }
 
-#' 1.1) How many trigraphs are there in this cryptosystem?
-#' Does this match your mathematical intuition?
-#' 1.2) Does the number of trigraphs change if we choose a 
-#' different number than -1 mod 26?
+#' 1.1) How many trigraphs are there in this cryptosystem? Is this affected by our choice of "25" as a remainder value?
