@@ -1,6 +1,8 @@
-"Bad Code, Better Code"
+# Bad Code, Better Code
 
-Let's start with this atrocity:
+This is an alternate exercise to "Cracking the Code" for people who want something a little easier, don't have a computer to hand, or can't live without Python.
+
+Let's start with this *atrocity* that was in the presentation:
 ```python
 import pandas as pd
 
@@ -24,6 +26,8 @@ df2.to_csv("users/amp45/python/current_code/input_data/census/paper_returns_2021
 df3.to_csv("users/amp45/python/current_code/input_data/census/total_returns_2021.csv")
 
 ```
+Can you think of some ways to fix this? Have a chat about it. If you get stuck, have a look at the steps below, which detail one analyst's valiant attempts to make this bad code better.
+
 Here, we present three *easy* fixes for the filepath problem.
 ```python
 #1 Changing the "starting point" for filepaths.
@@ -74,6 +78,10 @@ df_total.to_csv("total_returns_2021.csv")
 Let's use a for-loop to delete half of this code:
 ```python
 
+import pandas as pd
+import os
+os.chdir("users/amp45/python/current_code/input_data/census")
+
 sample = pd.read_csv("../population/2011_sample.csv")
 estimates = pd.read_csv("../population/2021_estimates.csv") / sample
 
@@ -88,9 +96,11 @@ Very nice and short! But we could do more for readability,
 and we might want to have access to all the data in memory afterwards.
 Let's try using a dictionary, and look at the full scope of our code.
 ```python
+
 import pandas as pd
 import os
 os.chdir("users/amp45/python/current_code/input_data/census")
+
 sample = pd.read_csv("../population/2011_sample.csv")
 estimates = pd.read_csv("../population/2021_estimates.csv") / sample
 
@@ -104,6 +114,6 @@ for mode in ['online', 'paper', 'total']: #mode of response
     df_dict[mode] = df
 
 ```
-That's the first proper comment I've done so far! The alternative would be having a longer variable name, which may be appropriate in some instances. Best practice is to have as few comments as necessary, and *no fewer*!
+That's the first proper comment I've done so far! The alternative would be having a longer variable name, which may be appropriate in some instances.
 
 The above code might not be "perfect", and indeed what counts at "perfect" may be different in the eyes of many people, but the point is that it is *better* code, and using simple tricks like these will save you time and effort.
