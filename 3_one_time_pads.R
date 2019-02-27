@@ -31,4 +31,4 @@ tear_off_page <- function(one_time_pad){
 }
 
 
-#' 3.3) Does tearing off a page work correctly?
+#' 3.2) Does tearing off a page work correctly?
