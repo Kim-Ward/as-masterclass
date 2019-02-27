@@ -2,7 +2,7 @@
 
 This is an alternate exercise to "Cracking the Code" for people who want something a little easier, don't have a computer to hand, or can't live without Python.
 
-Let's start with this *atrocity* that was in the presentation:
+Let's start with this *atrocity* that was in the presentation, which is all about predicting responses to the 2021 Census by looking at 2011 data and adjusting for an increase in population:
 ```python
 import pandas as pd
 
