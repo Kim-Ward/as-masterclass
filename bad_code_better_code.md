@@ -26,7 +26,9 @@ df2.to_csv("users/amp45/python/current_code/input_data/census/paper_returns_2021
 df3.to_csv("users/amp45/python/current_code/input_data/census/total_returns_2021.csv")
 
 ```
-Can you think of some ways to fix this? Have a chat about it. If you get stuck, have a look at the steps below, which detail one analyst's valiant attempts to make this bad code better.
+Can you think of some ways to fix this? Have a chat about it. Once you've thought a little, have a look at the steps below, which detail one analyst's valiant attempts to make this bad code better.
+
+## Fixing things.
 
 Here, we present three *easy* fixes for the filepath problem.
 ```python
