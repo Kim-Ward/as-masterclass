@@ -36,9 +36,9 @@ This cipher is also breakable using fairly simple statistical techniques such as
 
 ## 3 - The One-time Pad
 
-What if our key was the same length as the message? Then it would be pretty much impossible to crack! A ciphertext could decrypt to *anything*.
+What if our key was the same length as the message and we never reused it? Then it would be pretty much impossible to crack! A ciphertext could decrypt to *anything*. We call this type of key a one-time pad.
 
-The problem then becomes: how do we transmit, store, and eventually destroy the key? The KGB (Russian secret service) used one-time-pads (pairs of randomly generated keys used only once) during the Cold War, printing them on pads of flash paper so pages could be torn off and burned to leave no trace.
+The problem then becomes: how do we transmit, store, and eventually destroy the key? The Russian secret service used one-time-pads during the Cold War, printing them on pads of flash paper so pages could be torn off and burned to leave no trace.
 
 Another problem that we don't even consider these days is how to *generate* the key. Before computers became widespread, "random numbers" were expensive to make, leading to serious publications of books such as [this](https://www.amazon.co.uk/Million-Random-Digits-Normal-Deviates/dp/0833030477) that have today acquired some rather amusing Amazon reviews.
 
