@@ -9,7 +9,8 @@ trigraph_finder <- function(A, B){
   C <- letters[C]
   return(C)
 }
-#' 2.1) Look at the manual trigraph key. Are the trigraphs generated above correct?
+#' 2.1) Remember that (S, N, U) is a trigraph, and other trigraphs can be found by looking at the paper decoder.
+#' Are the trigraphs generated above correct?
 
 repeat_key <- function(key, length_to_repeat){
   #Repeats a key to the desired length.
@@ -22,21 +23,20 @@ repeat_key <- function(key, length_to_repeat){
   return(repeated_key)
 }
 #' 2.2) Is the key repeating correctly?
-#' Clue: there are *two* separate errors in the above code.
+#' Clue: "paste" and "length".
 
 crypto <- function(message, key){
   #Encrypts or decrypts a message.
-  repeated_key <- repeat_key(key, nchar(message))
+  repeated_key <- repeat_key(key, length(message))
   
   output <- ""
-  for (i in 1:nchar(message)){
+  for (i in 1:length(message)){
     m = substr(message, i, i)
     k = substr(repeated_key, i, i)
-    substr(output, i, i) <- trigraph_finder(m, k)
+    output <- paste(output, trigraph_finder(m, k))
   }
   return(output)
 }
 #' 2.3) Do messages encrypt without error?
 #' 2.4) If you encrypt and decrypt with the same key,
 #' do you get back the original message?
-#' 
