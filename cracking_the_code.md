@@ -1,14 +1,14 @@
-# The Diana Cryptosystem
+# Cracking the Code
 
 ## Background
 
-Imagine you're the US Army Special Forces. And it's the 1960s, and you're in the middle of the Vietnam War. "Computers" are strange things that beep and whir in large rooms, and much of what we now know as modern cryptography has yet to be invented. Nevertheless, it's imperative that you have a way to communicate strategy and plans effectively, quickly, and most of all - securely.
+Imagine you're a military organisation in the middle of the Cold War. "Computers" are strange things that beep and whir in large rooms, and much of what we now know as modern cryptography has yet to be invented. Nevertheless, it's imperative that you have a way to communicate strategy and plans effectively, quickly, and most of all - securely.
 
 So how do you do it?
 
 ## 1 - Trigraphs
 
-The Diana Cryptosystem is a variant of the famous and much older Vignere Cipher optimised for manual encryption/decryption speed.
+The Diana Cryptosystem is a variant of the famous and much older Vignere Cipher optimised for manual encryption/decryption speed, invented by the US Special Forces for use in Vietnam.
 
 Central to the cipher is its symmetry: encryption and decryption use the same operation, and it doesn't matter what order message and key are provided in. It uses a system of "trigraphs": triplets of letters that encode and decode into each other. For example, the triple (S, N, U) is a trigraph, thus:
 * a message S and key N would encrypt to a ciphertext U
