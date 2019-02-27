@@ -8,7 +8,7 @@ So how do you do it?
 
 ## 1 - Trigraphs
 
-The Diana Cryptosystem is a variant of the famous and much older Vignere Cipher optimised for manual encryption/decryption speed and intended for use with a one-time pad.
+The Diana Cryptosystem is a variant of the famous and much older Vignere Cipher optimised for manual encryption/decryption speed.
 
 Central to the cipher is its symmetry: encryption and decryption use the same operation, and it doesn't matter what order message and key are provided in. It uses a system of "trigraphs": triplets of letters that encode and decode into each other. For example, the triple (S, N, U) is a trigraph, thus:
 * a message S and key N would encrypt to a ciphertext U
