@@ -7,7 +7,8 @@
 ## 2 - Vignere Style:
 
 2.1)
-* The trigraphs are incorrect because the Diana cryptosystem uses 0-25 instead of 1-26 for its A-Z letter to number conversions. This can be fixed by (for example) editing "letter2num" to remove the +1, and by replacing 25 by 24 in the calculation inside "trigraph_finder".
+* The trigraphs are incorrect because the Diana cryptosystem uses 0-25 instead of 1-26 for its A-Z letter to number conversions. This can be fixed by (for example) editing "letter2num" to remove the +1, and by replacing `C` by `C+1` in the `letters[]` call inside "trigraph_finder".
+* Note that it is very easy to fix this *incorrectly* which will lead to unexplained problems in section 4. Testing is important!
 
 2.2)
 * The `paste()` function R uses to concatenate strings adds spaces by default; use `sep=""` as an argument to the paste function to fix this.
