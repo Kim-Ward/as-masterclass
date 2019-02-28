@@ -118,4 +118,10 @@ for mode in ['online', 'paper', 'total']: #mode of response
 ```
 That's the first proper comment I've done so far! The alternative would be having a longer variable name, which may be appropriate in some instances.
 
-The above code might not be "perfect", and indeed what counts at "perfect" may be different in the eyes of many people, but the point is that it is *better* code, and using simple tricks like these will save you time and effort.
+The above code might not be "perfect", but it is *better* code, and using simple tricks like these will save you time and effort.
+
+## Reflections
+
+* What examples of "bad code" have you encountered? How could they be made better?
+
+* Remember that all code is written to serve a purpose, and as long as it serves that purpose, it's not really "bad". The code evaluation rubric handout we've given you was written from the point of view of a software engineer, not a data analyst. Is there anything there you disagree with?
