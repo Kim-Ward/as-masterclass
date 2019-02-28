@@ -17,6 +17,7 @@ save_one_time_pad <- function(filename, one_time_pad){
 load_one_time_pad <- function(filename){
   #Loads a one-time pad from a file.
   one_time_pad <- readLines(filename, 1)
+  file.remove(filename) #we don't want our secrets lying around!
   return(one_time_pad)
 }
 
