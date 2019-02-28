@@ -2,7 +2,7 @@
 
 ## 1 - Trigraph Counting:
 
-* Use of brackets is important to establish precedence of mathematical expressions. `(A+B+C)%%26` not `A+B+C%%26`. There are 126 trigraphs in the Diana Cryptosystem
+* Use of brackets is important to establish precedence of mathematical expressions. `(A+B+C)%%26` not `A+B+C%%26`. There are 126 trigraphs in the Diana Cryptosystem.
 
 ## 2 - Vignere Style:
 
