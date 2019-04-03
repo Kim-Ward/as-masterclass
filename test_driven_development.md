@@ -12,11 +12,11 @@ Ceasar Cipher.
 
 * Here is a program that fails its tests. Debug the program so that it passes them.
 
-Vignere Cipher.
+Vignere Cipher. Tests fail due to off-by-one error in decrypt function.
 
 * Here is a program. Here is a vague idea of what problem the program might have. Write some tests for it, and then debug the program so that it passes them.
 
-Decrypt Vignere Cipher (by reversing key).
+Diana one-letter. BIDMAS issue.
 
 * Here is a program that is passing its tests. Add a new feature to the program and edit the tests accordingly.
 
