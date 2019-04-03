@@ -2,7 +2,7 @@
 
 Suitable for implementation in a Jupyter Notebook.
 
-* Here is a program that passes all of its tests. This will be a useful reference guide. Edit the test 'ready_to_move_on = FALSE' in order to progress to the next stage.
+* Here is a program that passes all of its tests. This will be a useful reference guide. Edit the test `ready_to_move_on = FALSE` in order to progress to the next stage.
 
 One-letter Vigneres.
 
