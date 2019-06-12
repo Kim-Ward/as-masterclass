@@ -36,6 +36,7 @@ Here, we present three *easy* fixes for the filepath problem.
 import os
 os.chdir("users/amp45/python/current_code/input_data/census/")
 df1 = pd.read_csv("online_returns.csv")
+# Note that in R, the setwd() function will do the same thing.
 
 #2 Storing a part of the filepath in a string.
 filepath = "users/amp45/python/current_code/input_data/census/"
@@ -52,7 +53,7 @@ Let's name our DataFrames something more useful too!
 
 import pandas as pd
 import os
-os.chdir("users/amp45/python/current_code/input_data/census")
+os.chdir("users/amp45/python/current_code/input_data/census/")
 
 df_online = pd.read_csv("online_returns.csv")
 df_paper = pd.read_csv("paper_returns.csv")
@@ -63,7 +64,7 @@ df_paper['sum'] = df_paper['england'] + df_paper['wales']
 df_total['sum'] = df_total['england'] + df_total['wales']
 
 #Ah. We're stuck. Should we move the working directory again?
-#Fortunately, we can use ".." to go up a level.
+#Fortunately, we can use ".." to go up a level. This also works in R.
 
 sample = pd.read_csv("../population/2011_sample.csv")
 estimates = pd.read_csv("../population/2021_estimates.csv") / sample
@@ -116,9 +117,6 @@ for mode in ['online', 'paper', 'total']: #mode of response
     df_dict[mode] = df
 
 ```
-That's the first proper comment I've done so far! The alternative would be having a longer variable name, which may be appropriate in some instances.
-
-The above code might not be "perfect", but it is *better* code, and using simple tricks like these will save you time and effort.
 
 ## Reflections
 
